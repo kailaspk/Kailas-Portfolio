@@ -53,7 +53,7 @@ export function Summary() {
             className="space-y-6"
           >
             <p className="text-lg text-slate-700 dark:text-slate-300 leading-relaxed">
-              Passionate Backend Software Engineer with <strong>5 years of experience</strong> 
+              Passionate Backend Software Engineer with <strong>5 years of experience </strong> 
               specializing in building robust, scalable systems using <strong>Node.js</strong> and 
               <strong> TypeScript</strong>. Expert in designing and implementing microservices 
               architectures that power mission-critical applications.
