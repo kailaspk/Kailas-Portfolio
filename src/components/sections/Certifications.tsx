@@ -13,7 +13,8 @@ export function Certifications() {
       skills: ['System Administration', 'Network Troubleshooting', 'Security Protocols', 'IT Support'],
       status: 'Verified',
       color: 'from-red-500 to-orange-500',
-      logo: '🎯'
+      logo: '🎯',
+      link: 'https://www.coursera.org/account/accomplishments/professional-cert/PGJ9PB3DTUMZ?authType=google&completeMode=existingCourseraAccount&utm_campaign=sharing_cta&utm_content=cert_image&utm_medium=certificate&utm_product=prof&utm_source=ln'
     },
     {
       title: 'AWS Fundamentals',
@@ -138,15 +139,22 @@ export function Certifications() {
                 </div>
 
                 {/* Action Button */}
-                <motion.button
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                  className={`w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r ${cert.color} text-white font-medium text-sm transition-all duration-300 hover:shadow-lg`}
+                <a
+                  href={cert.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className={`w-full block`}
                 >
-                  <Award className="h-4 w-4" />
-                  View Certificate
-                  <ExternalLink className="h-3 w-3" />
-                </motion.button>
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className={`w-full flex items-center justify-center gap-2 px-4 py-2 rounded-lg bg-gradient-to-r ${cert.color} text-white font-medium text-sm transition-all duration-300 hover:shadow-lg`}
+                  >
+                    <Award className="h-4 w-4" />
+                    View Certificate
+                    <ExternalLink className="h-3 w-3" />
+                  </motion.button>
+                </a>
               </div>
             </motion.div>
           ))}

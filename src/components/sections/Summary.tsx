@@ -17,7 +17,7 @@ export function Summary() {
     },
     {
       icon: Database,
-      title: 'Fintech',
+      title: 'Banking & Fintech',
       description: 'E-payments & P2P Systems'
     },
     {

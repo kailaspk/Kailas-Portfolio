@@ -8,7 +8,7 @@ export function Skills() {
     {
       icon: Code,
       title: 'Programming Languages',
-      skills: ['JavaScript', 'TypeScript', 'Python'],
+      skills: ['JavaScript', 'TypeScript', 'React', 'Python'],
       color: 'from-yellow-500 to-orange-500'
     },
     {
